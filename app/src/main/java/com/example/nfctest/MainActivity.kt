@@ -71,7 +71,7 @@ class MainActivity : ComponentActivity() {
                         ndefTechnology?.writeNdefMessage(message)
 
                     }) {
-                        Text("Send data")
+                        Text("Send data", modifier = Modifier.height(100.dp))
                     }
                 }
             }
@@ -108,9 +108,12 @@ class MainActivity : ComponentActivity() {
                         "00A4040007A0000002471001"
                     )
                 )
-                Toast.makeText(this, "Card Response: ${Utils.toHex(response)}", Toast.LENGTH_LONG).show()
 
-                Log.d("atatata", "Card Response: ${Utils.toHex(response)}")
+                runOnUiThread {
+                    Toast.makeText(this, "Card Response: ${Utils.toHex(response)}", Toast.LENGTH_LONG).show()
+
+                    Log.d("atatata", "Card Response: ${Utils.toHex(response)}")
+                }
 
                 isoDep.close()
             },
