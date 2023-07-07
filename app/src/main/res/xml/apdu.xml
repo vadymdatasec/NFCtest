@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/servicedesc"
+    android:requireDeviceUnlock="false">
+
+    <aid-group android:category="other" android:description="@string/aiddescription" >
+        <aid-filter android:name="A0000002471001"/>
+
+
+<!--        <aid-filter android:name="A0000006472F00" />-->
+
+<!--        <aid-filter android:name="0008A000000647" />-->
+<!--        <aid-filter android:name="A0000002471001" />-->
+<!--        <aid-filter android:name="015532465F563290" />-->
+<!--        <aid-filter android:name="5532465F563290" />-->
+<!--        <aid-filter android:name="015532465F5632" />-->
+<!--        <aid-filter android:name="A0 00 00 06 47 2F 00 01 55 32 46 5F 56 32 90" />-->
+<!--        <aid-filter android:name="A0000006472F00015532465F563290" />-->
+
+
+
+<!--        <aid-filter android:name="A0 00 00 06 47 2F 00 01 55 32 46 5F 56 32 90 00" />-->
+<!--        <aid-filter android:name="A0000006472F00015532465F56329000" />-->
+
+
+<!--        <aid-filter android:name="93708804211DB080B2" />-->
+<!--        <aid-filter android:name="95709906480E6DB2F" />-->
+<!--        <aid-filter android:name="95 70 92 90 64 80 E6 DB 2F" />-->
+<!--        <aid-filter android:name="00A4040008A000" />-->
+<!--        <aid-filter android:name="00A4040008A000" />-->
+<!--        <aid-filter android:name="0006472F000155" />-->
+<!--        <aid-filter android:name="32465F56329000" />-->
+<!--        <aid-filter android:name="A0000006472" />-->
+<!--        <aid-filter android:name="F56329000" />-->
+<!--        <aid-filter android:name="F00015532465" />-->
+<!--        <aid-filter android:name="283552427" />-->
+<!--        <aid-filter android:name="403691566" />-->
+    </aid-group>
+</host-apdu-service>

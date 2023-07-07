@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NFC test</string>
+    <string name="aiddescription">descr2</string>
+    <string name="servicedesc">descr1</string>
+</resources>
