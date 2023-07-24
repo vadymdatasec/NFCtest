@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/activity_badge_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppBarOverlay" android:id="@id/toolbarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/white">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/PopupOverlay" />
+        <FrameLayout android:id="@id/tenantInActionBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <include layout="@layout/badge_group_header" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_badge_list" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

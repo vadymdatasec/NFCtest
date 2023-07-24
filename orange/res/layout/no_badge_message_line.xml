@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/verticalLine" android:background="@color/tenant_background" android:layout_width="2.0dip" android:layout_height="47.0dip" android:layout_marginLeft="20.0dip" fresco:layout_constraintHeight_percent="1.0" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/semiCircle" android:background="@drawable/semi_circle" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" fresco:layout_constraintBottom_toBottomOf="@id/badgeCard" fresco:layout_constraintStart_toEndOf="@id/verticalLine" fresco:layout_constraintTop_toTopOf="@id/badgeCard" />
+    <View android:id="@id/horizontaLine" android:background="@color/tenant_background" android:layout_width="15.0dip" android:layout_height="2.0dip" android:layout_margin="0.0dip" fresco:layout_constraintBottom_toBottomOf="@id/badgeCard" fresco:layout_constraintStart_toEndOf="@id/verticalLine" fresco:layout_constraintTop_toTopOf="@id/badgeCard" />
+    <com.google.android.material.card.MaterialCardView android:gravity="start" android:id="@id/badgeCard" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:backgroundTint="@color/white" fresco:cardCornerRadius="10.0dip" fresco:cardElevation="10.0dip" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintStart_toEndOf="@id/semiCircle" fresco:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/no_badge_text_view" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_badge_available" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+.class public final Le/f/a/d/a/a/j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Le/f/a/d/a/e/a0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Le/f/a/d/a/e/a0<",
+        "Landroid/content/Context;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Le/f/a/d/a/a/h;
+
+
+# direct methods
+.method public constructor <init>(Le/f/a/d/a/a/h;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Le/f/a/d/a/a/j;->a:Le/f/a/d/a/a/h;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic a()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Le/f/a/d/a/a/j;->b()Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final b()Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Le/f/a/d/a/a/j;->a:Le/f/a/d/a/a/h;
+
+    invoke-virtual {v0}, Le/f/a/d/a/a/h;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Le/f/a/d/a/e/m;->b(Ljava/lang/Object;)V
+
+    return-object v0
+.end method

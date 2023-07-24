@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">multimediabs.com</domain>
+        <pin-set>
+            <pin digest="SHA-256">SJ0dgDP37z1SV5Hjjp4PWEIX1L/+VQm5hdT/XieJGJw=</pin>
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+        </pin-set>
+        <trustkit-config disableDefaultReportUri="true" enforcePinning="false" />
+    </domain-config>
+</network-security-config>

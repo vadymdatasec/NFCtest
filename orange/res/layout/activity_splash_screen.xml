@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_pack_id_logo" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/nfc_logo" android:layout_alignParentTop="true" android:contentDescription="@string/logo_pack_id" />
+    <TextView android:textAppearance="@style/MyTitleStyle" android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/appli_name" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/iv_pack_id_logo" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/app_version" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_below="@id/appli_name" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:src="@null" android:layout_alignParentBottom="true" android:layout_marginEnd="33.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:id="@id/tv_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/services" android:layout_alignBottom="@id/iv_orange" android:layout_alignStart="@id/textView" />
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/business" android:layout_above="@id/tv_service" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/iv_orange" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_config" android:background="@color/light_grey" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+        <include android:id="@id/model_config_info" layout="@layout/config_info" />
+        <include android:id="@id/application_id_config_info" layout="@layout/config_info" />
+        <include android:id="@id/application_version_config_info" layout="@layout/config_info" />
+        <include android:id="@id/os_version_config_info" layout="@layout/config_info" />
+        <include android:id="@id/uwb_compatible_info" layout="@layout/config_info" />
+        <include android:id="@id/contactless_ids_config_info" layout="@layout/config_info" />
+        <com.orange.hce.proto.ScrollViewWithMaxHeight android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" android:paddingStart="5.0dip" app:max_heigth="100">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_rssis" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.orange.hce.proto.ScrollViewWithMaxHeight>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <Switch android:textColor="@color/black" android:id="@id/rssi_calibration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rssi_calibration" />
+                <Switch android:textColor="@color/black" android:id="@id/persistent_logs_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/persistent_logs" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView android:textColor="@color/white" android:id="@id/clearLogs" android:background="@drawable/round_view_bg" android:padding="5.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_logs" android:inputType="text" android:fontFamily="sans-serif-light" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_config">
+        <TextView android:textColor="@color/black" android:id="@id/tv_log" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

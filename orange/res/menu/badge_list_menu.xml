@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@null" android:id="@id/qrcode" android:visible="true" android:title="@string/qrcode" android:checkable="true" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/bluetooth" android:visible="false" android:title="@string/bluetooth" android:checkable="true" app:showAsAction="always" />
+    <item android:icon="@drawable/baseline_more" android:id="@id/more" android:title="" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/baseline_help" android:id="@id/help_menu_item" android:title="@string/help" app:showAsAction="never" />
+            <item android:icon="@drawable/baseline_copyright" android:id="@id/legal_info_menu_item" android:title="@string/info_legal" app:showAsAction="never" />
+            <item android:id="@id/version_menu_item" android:title="Version Place Holder" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

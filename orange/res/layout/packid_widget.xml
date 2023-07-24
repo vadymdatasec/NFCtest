@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/widget_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widgetTopBar" android:background="@drawable/widget_header" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:id="@id/logoWidget" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/packid" android:layout_marginStart="5.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/appNameWidget" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/my_badge" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/logoWidget" />
+    </RelativeLayout>
+    <ListView android:id="@id/badgeListWidget" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:divider="@null" android:layout_below="@id/widgetTopBar" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/widgetEmptyView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/widget_no_badge" android:layout_below="@id/widgetTopBar" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+</RelativeLayout>

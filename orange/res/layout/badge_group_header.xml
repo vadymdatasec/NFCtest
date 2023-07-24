@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/badgeHeaderContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/badgeCard" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginStart="0.0dip" android:backgroundTint="@color/white" fresco:cardCornerRadius="10.0dip" fresco:cardElevation="10.0dip" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" fresco:strokeColor="@color/tenant_background" fresco:strokeWidth="2.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="start" android:padding="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/tenantLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@color/blue" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tenantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintLeft_toRightOf="@id/tenantLogo" fresco:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

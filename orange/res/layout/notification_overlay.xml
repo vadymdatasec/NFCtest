@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_custom_notif" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="end|bottom|center" android:id="@id/progressBar" android:background="@drawable/round_shape" android:padding="0.0dip" android:paddingBottom="0.0dip" android:layout_width="110.0dip" android:layout_height="110.0dip" style="@android:style/Widget.Holo.Light.ProgressBar.Inverse" />
+    <ImageView android:id="@id/iv_notif" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@null" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/lib_name" />
+</RelativeLayout>

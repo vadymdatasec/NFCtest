@@ -1,6 +1,7 @@
 package com.example.nfctest
 
 import android.app.PendingIntent
+import android.content.ComponentName
 import android.content.Intent
 import android.content.IntentFilter
 import android.nfc.NdefMessage
@@ -8,6 +9,8 @@ import android.nfc.NdefRecord
 import android.nfc.NfcAdapter
 import android.nfc.NfcAdapter.ACTION_NDEF_DISCOVERED
 import android.nfc.Tag
+import android.nfc.cardemulation.CardEmulation
+import android.nfc.cardemulation.CardEmulation.CATEGORY_OTHER
 import android.nfc.tech.IsoDep
 import android.nfc.tech.MifareClassic
 import android.nfc.tech.Ndef
@@ -64,19 +67,27 @@ class MainActivity : ComponentActivity() {
             NFCTestTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     Greeting("Android")
-                    Button(modifier = Modifier.height(100.dp), onClick = {
-
-
-                        val message: NdefMessage = createNdefMessage("12341324244")
-                        ndefTechnology?.writeNdefMessage(message)
-
-                    }) {
-                        Text("Send data", modifier = Modifier.height(100.dp))
-                    }
+//                    Button(modifier = Modifier.height(100.dp), onClick = {
+//
+//
+//                        val message: NdefMessage = createNdefMessage("12341324244")
+//                        ndefTechnology?.writeNdefMessage(message)
+//
+//                    }) {
+//                        Text("Send data", modifier = Modifier.height(100.dp))
+//                    }
                 }
             }
         }
 
+        val cardEmulation = CardEmulation.getInstance(nfcAdapter)
+        cardEmulation.registerAidsForService(
+            ComponentName(applicationContext, MyHostApduService::class.java),
+            CATEGORY_OTHER,
+            listOf("A00000050000000000000000", "F00000000A0101", "F7080400626364")
+        )
+
+        return
         readFromIntent(intent)
 
         pendingIntent = PendingIntent.getActivity(
@@ -98,7 +109,9 @@ class MainActivity : ComponentActivity() {
 
     override fun onResume() {
         super.onResume()
-//        nfcAdapter.enableForegroundDispatch(this, pendingIntent, filters, techList)
+        return
+//        nfcAdapter.disableReaderMode(this)
+        nfcAdapter.enableForegroundDispatch(this, pendingIntent, filters, techList)
         nfcAdapter.enableReaderMode(
             this, {
                 val isoDep = IsoDep.get(it)

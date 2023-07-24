@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_last_seen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:layout_toEndOf="@id/tv_device_name" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_rssi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="10.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_rssi_calibration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_device_name" />
+</RelativeLayout>

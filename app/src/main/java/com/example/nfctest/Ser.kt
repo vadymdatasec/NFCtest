@@ -6,6 +6,12 @@ import android.util.Log
 
 class MyHostApduService : HostApduService() {
 
+    override fun onCreate() {
+        super.onCreate()
+    }
+
+
+
     override fun processCommandApdu(commandApdu: ByteArray, extras: Bundle?): ByteArray {
         Log.d("atatata", "commandApdu = $commandApdu")
 

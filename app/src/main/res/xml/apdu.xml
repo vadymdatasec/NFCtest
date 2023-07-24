@@ -3,8 +3,24 @@
     android:description="@string/servicedesc"
     android:requireDeviceUnlock="false">
 
+<!--    <aid-group android:description="@string/aiddescription" android:category="other" />-->
+
     <aid-group android:category="other" android:description="@string/aiddescription" >
-        <aid-filter android:name="A0000002471001"/>
+        <aid-filter android:name="A00000050000000000000000"/>
+        <aid-filter android:name="A00000050000"/>
+        <aid-filter android:name="F00000000A0101"/>
+        <aid-filter android:name="F7080400626364"/>
+
+        <aid-filter android:name="F00102030405"/>
+<!--        <aid-filter android:name="F70804006263646566676869"/>-->
+<!--        <aid-filter android:name="ABAAE610F70804006263646566676869"/>-->
+<!--        <aid-filter android:name="F0************"/>-->
+
+
+
+
+
+<!--        <aid-filter android:name="A0000002471001"/>-->
 
 
 <!--        <aid-filter android:name="A0000006472F00" />-->

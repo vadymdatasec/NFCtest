@@ -1,0 +1,61 @@
+.class public abstract Le/f/a/a/i/b/h0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lcom/google/auto/value/AutoValue;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static h()Le/f/a/a/i/b/g0;
+    .locals 1
+
+    .line 1
+    new-instance v0, Le/f/a/a/i/b/u;
+
+    invoke-direct {v0}, Le/f/a/a/i/b/u;-><init>()V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract a()Le/f/a/a/i/b/d0;
+.end method
+
+.method public abstract b()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Le/f/a/a/i/b/f0;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract c()Ljava/lang/Integer;
+.end method
+
+.method public abstract d()Ljava/lang/String;
+.end method
+
+.method public abstract e()Le/f/a/a/i/b/n0;
+.end method
+
+.method public abstract f()J
+.end method
+
+.method public abstract g()J
+.end method
