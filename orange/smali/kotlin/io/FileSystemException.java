@@ -1,0 +1,2 @@
+public class kotlin.io.FileSystemException extends java.io.IOException {
+	 /* .source "SourceFile" */

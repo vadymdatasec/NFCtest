@@ -1,0 +1,32 @@
+public abstract class c.b.h {
+	 /* .source "SourceFile" */
+	 /* # static fields */
+	 public static final Integer abc_action_bar_home_description;
+	 public static final Integer abc_action_bar_up_description;
+	 public static final Integer abc_action_menu_overflow_description;
+	 public static final Integer abc_action_mode_done;
+	 public static final Integer abc_activity_chooser_view_see_all;
+	 public static final Integer abc_activitychooserview_choose_application;
+	 public static final Integer abc_capital_off;
+	 public static final Integer abc_capital_on;
+	 public static final Integer abc_menu_alt_shortcut_label;
+	 public static final Integer abc_menu_ctrl_shortcut_label;
+	 public static final Integer abc_menu_delete_shortcut_label;
+	 public static final Integer abc_menu_enter_shortcut_label;
+	 public static final Integer abc_menu_function_shortcut_label;
+	 public static final Integer abc_menu_meta_shortcut_label;
+	 public static final Integer abc_menu_shift_shortcut_label;
+	 public static final Integer abc_menu_space_shortcut_label;
+	 public static final Integer abc_menu_sym_shortcut_label;
+	 public static final Integer abc_prepend_shortcut_label;
+	 public static final Integer abc_search_hint;
+	 public static final Integer abc_searchview_description_clear;
+	 public static final Integer abc_searchview_description_query;
+	 public static final Integer abc_searchview_description_search;
+	 public static final Integer abc_searchview_description_submit;
+	 public static final Integer abc_searchview_description_voice;
+	 public static final Integer abc_shareactionprovider_share_with;
+	 public static final Integer abc_shareactionprovider_share_with_application;
+	 public static final Integer abc_toolbar_collapse_description;
+	 public static final Integer search_menu_title;
+	 public static final Integer status_bar_notification_info_overflow;

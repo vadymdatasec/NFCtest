@@ -1,0 +1,31 @@
+public abstract class c.r.b {
+	 /* .source "SourceFile" */
+	 /* # static fields */
+	 public static final Integer compat_button_inset_horizontal_material;
+	 public static final Integer compat_button_inset_vertical_material;
+	 public static final Integer compat_button_padding_horizontal_material;
+	 public static final Integer compat_button_padding_vertical_material;
+	 public static final Integer compat_control_corner_material;
+	 public static final Integer compat_notification_large_icon_max_height;
+	 public static final Integer compat_notification_large_icon_max_width;
+	 public static final Integer fastscroll_default_thickness;
+	 public static final Integer fastscroll_margin;
+	 public static final Integer fastscroll_minimum_range;
+	 public static final Integer item_touch_helper_max_drag_scroll_per_frame;
+	 public static final Integer item_touch_helper_swipe_escape_max_velocity;
+	 public static final Integer item_touch_helper_swipe_escape_velocity;
+	 public static final Integer notification_action_icon_size;
+	 public static final Integer notification_action_text_size;
+	 public static final Integer notification_big_circle_margin;
+	 public static final Integer notification_content_margin_start;
+	 public static final Integer notification_large_icon_height;
+	 public static final Integer notification_large_icon_width;
+	 public static final Integer notification_main_column_padding_top;
+	 public static final Integer notification_media_narrow_margin;
+	 public static final Integer notification_right_icon_size;
+	 public static final Integer notification_right_side_padding_top;
+	 public static final Integer notification_small_icon_background_padding;
+	 public static final Integer notification_small_icon_size_as_large;
+	 public static final Integer notification_subtext_size;
+	 public static final Integer notification_top_pad;
+	 public static final Integer notification_top_pad_large_text;

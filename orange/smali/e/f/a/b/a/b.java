@@ -1,0 +1,20 @@
+public abstract class e.f.a.b.a.b {
+	 /* .source "SourceFile" */
+	 /* # static fields */
+	 public static final Integer common_google_play_services_enable_button;
+	 public static final Integer common_google_play_services_enable_text;
+	 public static final Integer common_google_play_services_enable_title;
+	 public static final Integer common_google_play_services_install_button;
+	 public static final Integer common_google_play_services_install_text;
+	 public static final Integer common_google_play_services_install_title;
+	 public static final Integer common_google_play_services_notification_channel_name;
+	 public static final Integer common_google_play_services_notification_ticker;
+	 public static final Integer common_google_play_services_unsupported_text;
+	 public static final Integer common_google_play_services_update_button;
+	 public static final Integer common_google_play_services_update_text;
+	 public static final Integer common_google_play_services_update_title;
+	 public static final Integer common_google_play_services_updating_text;
+	 public static final Integer common_google_play_services_wear_update_text;
+	 public static final Integer common_open_on_phone;
+	 public static final Integer common_signin_button_text;
+	 public static final Integer common_signin_button_text_long;

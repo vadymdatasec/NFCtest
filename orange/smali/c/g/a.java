@@ -1,0 +1,24 @@
+public abstract class c.g.a {
+	 /* .source "SourceFile" */
+	 /* # static fields */
+	 public static final Integer alpha;
+	 public static final Integer coordinatorLayoutStyle;
+	 public static final Integer font;
+	 public static final Integer fontProviderAuthority;
+	 public static final Integer fontProviderCerts;
+	 public static final Integer fontProviderFetchStrategy;
+	 public static final Integer fontProviderFetchTimeout;
+	 public static final Integer fontProviderPackage;
+	 public static final Integer fontProviderQuery;
+	 public static final Integer fontStyle;
+	 public static final Integer fontVariationSettings;
+	 public static final Integer fontWeight;
+	 public static final Integer keylines;
+	 public static final Integer layout_anchor;
+	 public static final Integer layout_anchorGravity;
+	 public static final Integer layout_behavior;
+	 public static final Integer layout_dodgeInsetEdges;
+	 public static final Integer layout_insetEdge;
+	 public static final Integer layout_keyline;
+	 public static final Integer statusBarBackground;
+	 public static final Integer ttcIndex;

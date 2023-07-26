@@ -1,0 +1,20 @@
+public abstract class c.h.a {
+	 /* .source "SourceFile" */
+	 /* # static fields */
+	 public static final Integer alpha;
+	 public static final Integer font;
+	 public static final Integer fontProviderAuthority;
+	 public static final Integer fontProviderCerts;
+	 public static final Integer fontProviderFetchStrategy;
+	 public static final Integer fontProviderFetchTimeout;
+	 public static final Integer fontProviderPackage;
+	 public static final Integer fontProviderQuery;
+	 public static final Integer fontProviderSystemFontFamily;
+	 public static final Integer fontStyle;
+	 public static final Integer fontVariationSettings;
+	 public static final Integer fontWeight;
+	 public static final Integer lStar;
+	 public static final Integer nestedScrollViewStyle;
+	 public static final Integer queryPatterns;
+	 public static final Integer shortcutMatchRequired;
+	 public static final Integer ttcIndex;
